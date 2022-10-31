@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="opc_darkmode">Dark Mode</string>
+    <string name="tvTitle">Formulas</string>
+    <string name="opc_musica">Music</string>
+    <string name="btnCalcular">Calculate</string>
+    <string name="hint">Number</string>
+    <string name="SplashTitle">Project1</string>
+    <string name="SplashTitle1">Volumes and Areas</string>
+    <string name="Cero">Cant be 0</string>
+    <string name="Vacio">Empty field</string>
+    <string name="autor">By: Kevin Hernandez</string>
+    <string name="Resultado">Result</string>
+    <string name="Regresar">Back</string>
+    <string name="spElegir">Choose a formula</string>
+    <string name="spPrisma">Prism Volume</string>
+    <string name="spCilindro">Cilinder Volume</string>
+    <string name="spCono">Cone Volume</string>
+    <string name="spTrapezoide">Trapezoid Area</string>
+    <string name="spRectangulo">Rectangle Area</string>
+    <string name="spTriangulo">Triangle Area</string>
+</resources>

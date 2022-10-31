@@ -2,17 +2,250 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backg"
     tools:context=".MainActivity">
 
-    <TextView
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Proyecto1.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/Theme.Proyecto1.AppBarOverlay" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <Button
+        android:id="@+id/btnCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:fontFamily="@font/letra_formula"
+        android:text="@string/btnCalcular"
+        android:textColor="#FFC903"
+        android:onClick="calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.933"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="179dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:fontFamily="@font/letra_formula"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.6"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="179dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:fontFamily="@font/letra_formula"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.72"
+        tools:ignore="TextContrastCheck,TextContrastCheck"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="179dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:fontFamily="@font/letra_formula"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColorHint="#6D4C41"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.827"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="61dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/emmasophia"
+        android:gravity="center"
+        android:text="@string/tv1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.608"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvcm"
+        android:layout_width="61dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/emmasophia"
+        android:gravity="center"
+        android:text="@string/cm"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.591"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvcm2"
+        android:layout_width="61dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/emmasophia"
+        android:gravity="center"
+        android:text="@string/cm"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.71"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvcm3"
+        android:layout_width="61dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/emmasophia"
+        android:gravity="center"
+        android:text="@string/cm"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.815"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="61dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/emmasophia"
+        android:gravity="center"
+        android:text="@string/tv2"
+        android:textColor="#4E342E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.71"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="61dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/emmasophia"
+        android:gravity="center"
+        android:text="@string/tv3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.815"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/ivFormula"
+        android:layout_width="194dp"
+        android:layout_height="216dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.241"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivFormula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Spinner
+            android:id="@+id/spFormulas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="294dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/letra8bits"
+        android:gravity="center_horizontal"
+        android:text="@string/tvTitle"
+        android:textColor="#FFE500"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.692"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

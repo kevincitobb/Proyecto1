@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">Proyecto1</string>
+    <string name="opc_darkmode">Modo Oscuro</string>
+    <string name="tvTitle">Formulas</string>
+    <string name="opc_musica">Musica</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="hint">Numero</string>
+    <string name="tv1" translatable="false">1:</string>
+    <string name="tv2" translatable="false">2:</string>
+    <string name="tv3" translatable="false">3:</string>
+    <string name="SplashTitle">Proyecto1</string>
+    <string name="SplashTitle1">Volumenes y Areas</string>
+    <string name="Cero">No puede ser cero</string>
+    <string name="Vacio">Falta llenar este campo.</string>
+    <string name="autor">Por: Kevin Hernandez</string>
+    <string name="version" translatable="false">Version: 1.0.0</string>
+    <string name="Volumen" translatable="false">V:</string>
+    <string name="Area" translatable="false">A:</string>
+    <string name="radio" translatable="false">r</string>
+    <string name="altura" translatable="false">h</string>
+    <string name="largo" translatable="false">L</string>
+    <string name="ancho" translatable="false">W</string>
+    <string name="basemayor" translatable="false">B</string>
+    <string name="basemenor" translatable="false">b</string>
+    <string name="cm" translatable="false">cm</string>
+    <string name="cm2" translatable="false">cm∧2</string>
+    <string name="cm3" translatable="false">cm∧3</string>
+    <string name="Resultado">Resultado</string>
+    <string name="Regresar">Regresar</string>
+    <string name="spElegir">Elegir formula</string>
+    <string name="spPrisma">Volumen Prisma</string>
+    <string name="spCilindro">Volumen Cilindro</string>
+    <string name="spCono">Volumen Cono</string>
+    <string name="spTrapezoide">Area Trapezoide</string>
+    <string name="spRectangulo">Area Rectangulo</string>
+    <string name="spTriangulo">Area Triangulo</string>
+    <string-array name="formulas_array">
+        <item>@string/spElegir</item>
+        <item>@string/spPrisma</item>
+        <item>@string/spCilindro</item>
+        <item>@string/spCono</item>
+        <item>@string/spTrapezoide</item>
+        <item>@string/spRectangulo</item>
+        <item>@string/spTriangulo</item>
+
+    </string-array>
 </resources>
