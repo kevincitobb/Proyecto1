@@ -162,7 +162,11 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         val x = xv.text.toString().toDouble()
         val y = yv.text.toString().toDouble()
         val z = zv.text.toString().toDouble()
-
+        if(x == 0.0 || y ==0.0 || z ==0.0){
+            binding.et1.error= getString(R.string.Cero)
+            binding.et2.error= getString(R.string.Cero)
+            binding.et3.error= getString(R.string.Cero)
+            return}
         val x1 = x*y*z
         val res = arrayOf(x1).toDoubleArray()
         val parametros = Bundle()
@@ -192,7 +196,10 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         }
         val x = xv.text.toString().toDouble()
         val y = yv.text.toString().toDouble()
-
+        if(x == 0.0 || y ==0.0){
+            binding.et1.error= getString(R.string.Cero)
+            binding.et2.error= getString(R.string.Cero)
+            return}
         val x1 =(π*x*y)
         val res = arrayOf(x1).toDoubleArray()
         val parametros = Bundle()
@@ -222,7 +229,10 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         }
         val x = xv.text.toString().toDouble()
         val y = yv.text.toString().toDouble()
-
+        if(x == 0.0 || y ==0.0){
+            binding.et1.error= getString(R.string.Cero)
+            binding.et2.error= getString(R.string.Cero)
+            return}
         val x1 =(π*x*y)/3
         val res = arrayOf(x1).toDoubleArray()
         val parametros = Bundle()
@@ -253,7 +263,11 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         val x = xv.text.toString().toDouble()
         val y = yv.text.toString().toDouble()
         val z = zv.text.toString().toDouble()
-
+        if(x == 0.0 || y ==0.0 || z ==0.0){
+            binding.et1.error= getString(R.string.Cero)
+            binding.et2.error= getString(R.string.Cero)
+            binding.et3.error= getString(R.string.Cero)
+            return}
         val x1 =((x+y)*z)/2
         val res = arrayOf(x1).toDoubleArray()
         val parametros = Bundle()
@@ -284,7 +298,10 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         }
         val x = xv.text.toString().toDouble()
         val y = yv.text.toString().toDouble()
-
+        if(x == 0.0 || y ==0.0){
+            binding.et1.error= getString(R.string.Cero)
+            binding.et2.error= getString(R.string.Cero)
+            return}
         val x1 =(x*y)
         val res = arrayOf(x1).toDoubleArray()
         val parametros = Bundle()
@@ -315,7 +332,10 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         }
         val x = xv.text.toString().toDouble()
         val y = yv.text.toString().toDouble()
-
+        if(x == 0.0 || y ==0.0){
+            binding.et1.error= getString(R.string.Cero)
+            binding.et2.error= getString(R.string.Cero)
+            return}
         val x1 =(x*y)/2
         val res = arrayOf(x1).toDoubleArray()
         val parametros = Bundle()
